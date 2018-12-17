@@ -48,16 +48,16 @@ export default {
     },
     sendForm() {
       if (this.titleText.length > 0 && this.projectText.length > 0) {
-        const titleTx = this.titleText;
-        const projectTx = this.projectText;
-        this.$emit('create-todo', 
+        const titleTx = this.titleText
+        const projectTx = this.projectText
+        this.$emit('create-todo',
           titleTx,
-          projectTx,
-        );
-        this.titleText = '';
-        this.projectText = '';
+          projectTx
+        )
+        this.titleText = ''
+        this.projectText = ''
       }
-      this.isCreating = false;
+      this.isCreating = false
     }
   }
 };
